@@ -11,23 +11,7 @@
 
 function findVowels(str) {
   const string = str;
-  const vowels = [
-    "а",
-    "я",
-    "о",
-    "ё",
-    "у",
-    "ю",
-    "ы",
-    "и",
-    "э",
-    "е",
-    "a",
-    "e",
-    "i",
-    "o",
-    "u",
-  ]; // бонус с английскими гласными
+  const vowels = ["а","я","о","ё","у","ю","ы","и","э","е","a","e","i","o","u"]; // бонус с английскими гласными
   let count = 0;
   for (let char of string.toLowerCase().replace(/[*—.,)(]/gi, " ")) {
     if (vowels.includes(char)) {
