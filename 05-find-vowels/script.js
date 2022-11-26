@@ -28,7 +28,7 @@ function findVowels(str) {
     "o",
     "u",
   ]; // бонус с английскими гласными
-  const count = 0;
+  let count = 0;
   for (let char of string.toLowerCase().replace(/[*—.,)(]/gi, " ")) {
     if (vowels.includes(char)) {
       count++;
